@@ -47,14 +47,14 @@
 <body>
 
 <!-- navbar -->
-<nav id="princ" >
-    <div id="navbar" >
-        <a  class="navscroll" data-id="1" id="nav1"  >Accueil</a>&nbsp;&nbsp;&nbsp;
-        <a  class="navscroll" data-id="2" id="nav2"  >Mes services </a>&nbsp;&nbsp;&nbsp;
-        <a  class="navscroll" data-id="3" id="nav3"  >Technologies</a>&nbsp;&nbsp;&nbsp;
-        <a  class="navscroll" data-id="4" id="nav4"  >Créations</a>&nbsp;&nbsp;&nbsp;
-        <a  class="navscroll" data-id="5" id="nav5"  >A propos</a> &nbsp;&nbsp;&nbsp;
-        <a  class="navscroll" data-id="4" id="nav6"  >Contact</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<nav id="princ">
+    <div id="navbar">
+        <a class="navscroll" data-id="1" id="nav1">Accueil</a>&nbsp;&nbsp;&nbsp;
+        <a class="navscroll" data-id="2" id="nav2">Mes services </a>&nbsp;&nbsp;&nbsp;
+        <a class="navscroll" data-id="3" id="nav3">Technologies</a>&nbsp;&nbsp;&nbsp;
+        <a class="navscroll" data-id="4" id="nav4">Créations</a>&nbsp;&nbsp;&nbsp;
+        <a class="navscroll" data-id="5" id="nav5">A propos</a> &nbsp;&nbsp;&nbsp;
+        <a class="navscroll" data-id="4" id="nav6">Contact</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     </div>
 </nav>
 <!-- navbar -->
@@ -64,85 +64,153 @@
 
 
 
-    <style>
-        #firstpage{
-            color:white; padding-top:10%;
-            padding-left: 8%;
-        }
-        #firstpage h3{
-            font-size: 60px;
-            color:white; }
-        #firstpage h4 {
-            font-size: 30px;
-            color:white;
-            font-family: "DINPro-CondRegular";
-        }
-    </style>
 
-    <div class="center_text"  >
+    <div class="center_text">
         <div id="firstpage" style="">
 
-        <h3  >Arthur Moll</h3>
+            <h3>Arthur Moll</h3>
             <br>
-        <h4 >Développeur Web Freelance</h4>
-            <h4 >Symfony 2</h4>
+            <h4>Développeur Web Freelance</h4>
+            <h4>Symfony 2</h4>
 
-   </div>
-
-        <div id="button_contact" style="margin-top: 15%;">
-            <div style="padding-top:4vh; " >
-            J'ai une question <br>
-
-            </div>
         </div>
 
+        <div id="button_contact" style="margin-top: 15%;">
+            <div style="padding-top:4vh; ">
+                J'ai une question <br>
+
+            </div>
         </div>
 
     </div>
 
 </div>
+
+</div>
 <!-- page 1 -->
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Demande de renseignement</h4>
+            </div>
+            <div class="modal-body">
+
+                <form action="#">
+
+
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="mdl-textfield mdl-js-textfield">
+                                <input class="mdl-textfield__input" type="text" id="name" />
+                                <label class="mdl-textfield__label" for="name">Nom Prénom</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="mdl-textfield mdl-js-textfield">
+                                <input class="mdl-textfield__input" type="text" id="email" />
+                                <label class="mdl-textfield__label" for="email">Email</label>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="mdl-textfield mdl-js-textfield">
+                                <input class="mdl-textfield__input" type="text" id="tel" />
+                                <label class="mdl-textfield__label" for="email">Télephone</label>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="mdl-textfield mdl-js-textfield" id="question">
+                                <textarea class="mdl-textfield__input" type="textarea" rows= "10" id="ask" ></textarea>
+                                <label  class="mdl-textfield__label" for="ask">
+                                    J'ai une question<br>
+                                    Je veux en savoir plus sur vos compétences<br>
+                                    Je voudrais un devis (réponse en 24h)<br>
+
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+                </form>
+
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Non, merci, j'ai dejà tout compris !</button>
+                <button type="button" class="btn btn-primary">Poser ma question</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- page 2 -->
 <div id="page2">
 
 
-    <br><br>
-    <div class="container-fluid" >
-        <div class="row " >
-            <div class="col-md-offset-1 col-md-10">
+    <div class="container-fluid">
+        <div class="row ">
+            <div class="col-sm-offset-1 col-sm-10">
 
                 <div class="row margebottom">
                     <h3 class=" titre">Mes services </h3>
                 </div>
 
                 <div class="row">
-                    <div class="col-md-4 servicecard"  >
+                    <div class="col-sm-4 servicecard">
                         <img class="center_img" src="pics/icone/3.png" style="width:50%; padding-bottom: 15%;">
-                        <div class="center_text txtservice">Création de sites vitrines et E-commerce  </div>
+
+                        <div class="center_text txtservice">Création de sites vitrines et E-commerce</div>
                     </div>
 
-                    <div class="col-md-4 servicecard">
+                    <div class="col-sm-4 servicecard">
                         <img class="center_img" src="pics/icone/2.png" style="width:50%; padding-bottom: 5%;">
-                        <div class="center_text txtservice">Développement de plateformes de réservations en ligne </div>
+
+                        <div class="center_text txtservice">Développement de plateformes de réservations en ligne</div>
                     </div>
-                    <div class="col-md-4 servicecard">
+                    <div class="col-sm-4 servicecard">
                         <img class="center_img" src="pics/icone/5.png" style="width:50%; padding-bottom: 10%;">
+
                         <div class="center_text txtservice">Développement spécifique sur demande</div>
                     </div>
                 </div>
                 <br><br><br><br>
-                <div class="row margebottom" >
-                    <div class="col-md-4 servicecard" >
+
+                <div class="row margebottom">
+                    <div class="col-sm-4 servicecard">
                         <img class="center_img" src="pics/icone/6.png" style="width:50%; padding-bottom: 10%; ">
+
                         <div class="center_text txtservice">Intégration de Responsive Design</div>
                     </div>
-                    <div class="col-md-4 servicecard">
+                    <div class="col-sm-4 servicecard">
                         <img class="center_img" src="pics/icone/1.png" style="width:40%; padding-bottom: 10%;">
+
                         <div class="center_text txtservice">Refonte de Stratégies SEO (Référencement)</div>
                     </div>
-                    <div class="col-md-4 servicecard">
+                    <div class="col-sm-4 servicecard">
                         <img class="center_img" src="pics/icone/4.png" style="width:30%; padding-bottom: 10%;">
+
                         <div class="center_text txtservice">Script growth hacking Phantom.js / Casper.js</div>
                     </div>
 
@@ -161,61 +229,58 @@
 <div id="page3">
 
     <div class="container-fluid">
-        <div class="row margebottom" >
+        <div class="row margebottom">
 
 
-
-            <div class="col-md-offset-1 col-md-10">
+            <div class="col-sm-offset-1 col-sm-10">
 
                 <div class="row margebottom">
                     <h3 class=" titre">Technologies </h3>
                 </div>
 
                 <div class="row">
-                    <div class="col-md-3 competence" >
+                    <div class="col-sm-3 competence">
                         <img class="center_img " src="pics/techno/php.png" style="width:70%; padding-top:13%;">
 
 
+                    </div>
+                    <div class="col-sm-3 competence">
+                        <img class="center_img " src="pics/techno/symfony2_black_2.png"
+                             style="width:40%; padding-top:14%;">
+
 
                     </div>
-                    <div class="col-md-3 competence">
-                        <img class="center_img " src="pics/techno/symfony2_black_2.png" style="width:40%; padding-top:14%;">
-
-
-                    </div>
-                    <div class="col-md-3 competence">
+                    <div class="col-sm-3 competence">
                         <img class="center_img " src="pics/techno/javascript.png" style="width:70%; ">
 
 
-
                     </div>
-                    <div class="col-md-3 competence">
+                    <div class="col-sm-3 competence">
                         <img class="center_img " src="pics/techno/jquery.gif" style="width:50%;  padding-top:7%;">
 
                     </div>
                 </div>
                 <br><br><br><br>
-                <div class="row " >
-                    <div class="col-md-3 competence" >
+
+                <div class="row ">
+                    <div class="col-sm-3 competence">
                         <img class="center_img " src="pics/techno/html5.png" style="width:50%; ">
 
                     </div>
-                    <div class="col-md-3 competence">
+                    <div class="col-sm-3 competence">
 
                         <img class="center_img " src="pics/techno/github-logo.jpg" style="width:80%; ">
                     </div>
-                    <div class="col-md-3 competence">
+                    <div class="col-sm-3 competence">
 
                         <img class="center_img " src="pics/techno/css3-logo.jpg" style="width:90%; ">
                     </div>
-                    <div class="col-md-3 competence">
+                    <div class="col-sm-3 competence">
 
-                        <img class="center_img " src="pics/techno/MYSQL.svg.png" style="width:70%; ">
+                        <img class="center_img " src="pics/techno/MySQL.svg.png" style="width:70%; ">
                     </div>
 
                 </div>
-
-
 
 
             </div>
@@ -230,10 +295,9 @@
 <div id="page4">
 
 
-
     <div class="container-fluid">
-        <div class="row  margebottom" >
-            <div class="col-md-offset-1 col-md-10">
+        <div class="row  margebottom">
+            <div class="col-sm-offset-1 col-sm-10">
 
                 <div class="row margebottom">
                     <h3 class=" titre">Mes Créations</h3>
@@ -243,28 +307,32 @@
                     <div class="col-sm-6 " style="border-right: 2px solid #036f73;">
 
                         <img id="card1" class="competence" src="pics/portfolio/hexa/hoper_hexa.png" style="width:35%; ">
-                        <img id="card2" class="competence" src="pics/portfolio/hexa/chaire_hexa.png" style="width:35%;  ">
+                        <img id="card2" class="competence" src="pics/portfolio/hexa/chaire_hexa.png"
+                             style="width:35%;  ">
 
 
+                        <img id="card4" class="competence" src="pics/portfolio/hexa/bcbg_hexa.png"
+                             style="width:35%;  margin-left: 18%;  position:relative; bottom: 6vh; ">
+                        <img id="card5" class="competence" src="pics/portfolio/hexa/unnited_hexa.png"
+                             style="width:35%;  margin-left: 0%;; position:relative; bottom: 6vh; ">
+
+                        <script>
 
 
-                        <img id="card4" class="competence" src="pics/portfolio/hexa/bcbg_hexa.png" style="width:35%;  margin-left: 18%;  position:relative; bottom: 6vh; ">
-                        <img id="card5" class="competence" src="pics/portfolio/hexa/unnited_hexa.png" style="width:35%;  margin-left: 0%;; position:relative; bottom: 6vh; ">
-
-            <script>
-
-
-            </script>
+                        </script>
 
                     </div>
                     <div class="col-sm-6">
 
-                        <div class="portfolio" >
-                            <a href="http://myhoper.com/" id="portfoliolink" target="_blank" >
-                            <img id="imageportfolio" class="center_img competence" src="pics/portfolio/hoper1.jpg" style="width:100%;  ">
+                        <div class="portfolio">
+                            <a href="http://myhoper.com/" id="portfoliolink" target="_blank">
+                                <img id="imageportfolio" class="center_img competence" src="pics/portfolio/hoper1.jpg"
+                                     style="width:100%;  ">
                             </a>
+
                             <div class=" margetop " id="textportfolio">
-                                Hoper est une société de mise en relation entre des particuliers et des aides ménagers à domicile incubé à la Blue Factory (ESCP Europe)
+                                Hoper est une société de mise en relation entre des particuliers et des aides ménagers à
+                                domicile incubé à la Blue Factory (ESCP Europe)
                                 <br>
                                 <br> - Amélioration graphique et corrections de bugs
                                 <br>- Amélioration du back office pour gérer les réservations
@@ -275,54 +343,53 @@
 
                             </div>
                         </div>
-<!--
-                        <div class="portfolio" id="portfolio2">
-                            <img class="center_img competence" src="pics/portfolio/chaire.jpg" style="width:100%;  ">
+                        <!--
+                                                <div class="portfolio" id="portfolio2">
+                                                    <img class="center_img competence" src="pics/portfolio/chaire.jpg" style="width:100%;  ">
 
-                            <div class="center_text margetop">
-                                CHAIRE ENTREPREUNARIALE ESCP EUROPE :
+                                                    <div class="center_text margetop">
+                                                        CHAIRE ENTREPREUNARIALE ESCP EUROPE :
 
-                                - Création du site internet de la chaire entrepreneuriale
-                                - Back office pour gérer le contenu
-                                - Générateur de Landing page pour les événements et les différentes formations proposées par la Chaire
-                                - Evénementiel et différentes mission pour promouvoir l'entreprenariat
+                                                        - Création du site internet de la chaire entrepreneuriale
+                                                        - Back office pour gérer le contenu
+                                                        - Générateur de Landing page pour les événements et les différentes formations proposées par la Chaire
+                                                        - Evénementiel et différentes mission pour promouvoir l'entreprenariat
 
-                                Technologies: HTML 5, CSS 3, PHP 5, Symfony 2, Bootstrap sur serveur mutualisé
+                                                        Technologies: HTML 5, CSS 3, PHP 5, Symfony 2, Bootstrap sur serveur mutualisé
 
-                                En ligne d'ici la fin du mois (url à venir) !
-
-
-                            </div>
-                        </div>
-
-                        <div class="portfolio" id="portfolio3">
-                            <img class="center_img competence" src="pics/portfolio/bcbg.jpg" style="width:100%;  ">
-
-                            <div class="center_text margetop">
-                                SOYEZBCBG :
-                                Création d'une plateforme de réservation de pressing à domicile.
-                                Vue client + back office ( pour la gestion des reservations)
-                                En Symfony 2
-                                http://55.soyezbcbg.fr/
+                                                        En ligne d'ici la fin du mois (url à venir) !
 
 
-                            </div>
-                        </div>
+                                                    </div>
+                                                </div>
 
-                        <div class="portfolio" id="portfolio4">
-                            <img class="center_img competence" src="pics/portfolio/unnited.jpg" style="width:100%;  ">
+                                                <div class="portfolio" id="portfolio3">
+                                                    <img class="center_img competence" src="pics/portfolio/bcbg.jpg" style="width:100%;  ">
 
-                            <div class="center_text margetop">
-                                UNNITEDDONNATIONS :
-                                Réalisation de missions ponctuelles pour améliorer l'ergonomie du site
+                                                    <div class="center_text margetop">
+                                                        SOYEZBCBG :
+                                                        Création d'une plateforme de réservation de pressing à domicile.
+                                                        Vue client + back office ( pour la gestion des reservations)
+                                                        En Symfony 2
+                                                        http://55.soyezbcbg.fr/
+
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="portfolio" id="portfolio4">
+                                                    <img class="center_img competence" src="pics/portfolio/unnited.jpg" style="width:100%;  ">
+
+                                                    <div class="center_text margetop">
+                                                        UNNITEDDONNATIONS :
+                                                        Réalisation de missions ponctuelles pour améliorer l'ergonomie du site
 
 
 
-                            </div>
-                        </div>
--->
+                                                    </div>
+                                                </div>
+                        -->
                     </div>
-
 
 
                 </div>
@@ -360,18 +427,16 @@
 <div id="page5">
 
 
-
-
     <div class="container-fluid">
-        <div class="row  margebottom" >
-            <div class="col-md-offset-1 col-md-10">
+        <div class="row  margebottom">
+            <div class="col-sm-offset-1 col-sm-10">
 
                 <div class="row margebottom">
-                <h3 class=" titre">A propos</h3>
+                    <h3 class=" titre">A propos</h3>
                 </div>
 
                 <div class="row">
-                    <div class="col-sm-4">
+                    <div class="col-md-4">
                         <div>
                             <img class="center_img " src="pics/arthurmoll.jpg" id="photomoi">
                         </div>
@@ -383,9 +448,14 @@
                             Bonjour, <br><br>
 
                             Je suis développeur web en freelance depuis maintenant 2 ans.<br>
-                            Diplômé d’une école d’ingénieur parisienne, j’ai travaillé dans plusieurs start-up parisiennes en tant que développeur principal ou j’ai appris a mener des projets mais aussi à comprendre les besoins et à communiquer avec des neophytes en informatique ainsi qu'avec des professionnels.
+                            Diplômé d’une école d’ingénieur parisienne, j’ai travaillé dans plusieurs start-up
+                            parisiennes en tant que développeur principal ou j’ai appris a mener des projets mais aussi
+                            à comprendre les besoins et à communiquer avec des neophytes en informatique ainsi qu'avec
+                            des professionnels.
                             <br><br>
-                            Je saurais mettre à profit mes competences informatiques et mon sens de l’écoute pour mener à bien vos projets depuis la conception jusqu’a la maintenance, en passant par le développement bien sur !
+                            Je saurais mettre à profit mes competences informatiques et mon sens de l’écoute pour mener
+                            à bien vos projets depuis la conception jusqu’a la maintenance, en passant par le
+                            développement bien sur !
                             <br><br>
                             J’ai l’habitude de travailler avec des freelance en webdesign que je peux vous recommander.
                             <br><br>
@@ -394,68 +464,63 @@
                             A bientôt !
 
 
-
-
                         </div>
                     </div>
 
                 </div>
 
 
+            </div>
+        </div>
 
 
+    </div>
+</div>
+
+    <!-- page 5 -->
+    <div id="inter5">
+
+        <style>
+            #blockcontact {
+                position: relative;
+                top: 30%;
+                width: 50%;
+                margin-left: 25%;
+                background-color: white;
+                padding-bottom: 20px;
+            }
+        </style>
+
+        <div id="blockcontact">
+            <h3 class="center_text titre">Contact</h3>
 
 
+            <div class="center_text" id="contact">
+                Arth.moll@gmail.com <br><br>
+                0658096548 <br>
+                <br>
 
+                <a href="https://fr.linkedin.com/pub/arthur-moll/50/5b2/a96">
+                    <img class="center_img " src="pics/linkedin.png" style="width:7%; ">
+                </a>
+
+
+            </div>
         </div>
     </div>
 
 
-</div>
-
-<!-- page 5 -->
-<div id="inter5">
-
-    <style>
-        #blockcontact{
-            position:relative;
-            top:30%;
-            width:50%;
-            margin-left: 25%;
-            background-color: white;
-            padding-bottom:20px;
-        }
-    </style>
-
-  <div id="blockcontact">
-    <h3 class="center_text titre">Contact</h3>
+    <!-- page 6 -->
 
 
-    <div class="center_text" id="contact">
-        Arth.moll@gmail.com <br><br>
-        0658096548 <br>
-                <br>
+    <!-- page 6 -->
 
-            <a href="https://fr.linkedin.com/pub/arthur-moll/50/5b2/a96">
-                <img class="center_img " src="pics/linkedin.png" style="width:7%; ">
-            </a>
 
+    <!-- footer -->
+    <div class="footer">
 
     </div>
-  </div>
-</div>
-<!-- page 6 -->
-
-
-
-<!-- page 6 -->
-
-
-<!-- footer -->
-<div class="footer">
-
-</div>
-<!-- footer -->
+    <!-- footer -->
 
 
 </body>
@@ -463,16 +528,28 @@
 
 
 
-<script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
+
+
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="https://cdn.jsdelivr.net/jquery.scrollto/2.1.0/jquery.scrollTo.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
 <script src="lib/js.js"></script>
+
 <!-- Analitycs -->
 <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'http://www.google-analytics.com/analytics.js', 'ga');
 
     ga('create', 'UA-68366431-1', 'auto');
     ga('send', 'pageview');
