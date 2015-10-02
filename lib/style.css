@@ -1,0 +1,270 @@
+
+@font-face {
+    font-family: "DINPro-CondMedium";
+    src: url('../font/DINPro-CondMedium.otf');
+}
+
+@font-face {
+    font-family: "DINPro-CondBold";
+    src: url('../font/DINPro-CondBold.otf');
+}
+
+@font-face {
+    font-family: "DINPro-CondRegular";
+    src: url('../font/DINPro-CondRegular.otf');
+}
+
+body{
+    font-family:"DINPro-CondMedium" ;
+
+    color: #212121;
+}
+
+body h1,h2,h3,h4,h5,h6{
+    font-family:"DINPro-CondBold" ;
+    color:#036f73;
+    text-align:left;
+    /*color: #212121;*/
+}
+
+.bold{
+    font-family:"DINPro-CondBold" ;
+    color: #212121;
+}
+
+
+
+body{
+    min-height: 100vh;
+    font-family: Roboto;
+
+}
+
+
+
+.yellow{color:white;}
+
+a{
+
+    color:black;
+    text-decoration: none;
+}
+
+a:hover{
+
+    color: white;
+    text-decoration: none;
+}
+
+.titre{
+   padding-top:30px;
+}
+
+.margetop{
+    padding-top:50px;
+}
+
+.margebottom{
+    padding-bottom:80px;
+}
+
+/* Utils */
+.center_text{
+    text-align:center;
+}
+
+.center_img{
+    display:block; margin-left:auto; margin-right:auto;
+}
+/* Utils */
+
+
+/*  navabar */
+nav a {
+    font-size:20px;
+    color:white;
+}
+#navbar{
+    margin-top: 1.5%;
+    text-align: right;
+}
+#princ {
+
+
+    height:8vh;
+    position:fixed;
+    z-index:1;
+    width:100%;
+    background-color: #036f73;
+    /*background-color: #ffff00;
+    background-color: #03A9F4;*/
+
+}
+/*  navabar */
+
+/*  First page */
+
+#button_contact{
+    display:block;
+    margin-right:auto;
+    margin-left:auto;
+    width:25%;
+    height:10vh;
+    font-size: 22px;
+    border: 3px white solid;
+    color:white;
+
+}
+
+#button_contact:hover{
+    background-color:white;
+    color:#036f73;
+
+
+}
+
+/*  First page */
+
+/*  Competence page */
+
+.servicecard{
+  padding-top:20px;
+    padding-bottom:20px;
+}
+
+.servicecard:hover{
+    background-color: #eaf6f3;
+}
+
+.competence:hover{
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+    -moz-filter: grayscale(1);
+    -o-filter: grayscale(1);
+    -ms-filter: grayscale(1);
+}
+
+.competence{
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+    -moz-filter: grayscale(0);
+    -o-filter: grayscale(0);
+    -ms-filter: grayscale(0);
+}
+
+#photomoi:hover{
+
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+    -moz-filter: grayscale(1);
+    -o-filter: grayscale(1);
+    -ms-filter: grayscale(1);
+}
+
+#photomoi{
+    width:80%;
+    border-radius:50%;
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+    -moz-filter: grayscale(0);
+    -o-filter: grayscale(0);
+    -ms-filter: grayscale(0);
+}
+
+/*  First page */
+
+
+/* Page service*/
+.txtservice{
+
+    font-family: "DINPro-CondRegular";
+    font-size:22px;
+}
+
+/* Page service*/
+
+/* Page competence*/
+.txtarea{
+
+    font-size:18px;
+}
+/* Page competence*/
+
+
+/* Footer */
+.footer{
+   /* top:98vh;
+    z-index:20;
+    position:fixed;*/
+   /* height:2vh;
+    background-color: #ffff00;*/
+}
+
+/* Footer */
+
+/* Contact */
+
+#contact{
+    font-size: 17px ;
+}
+
+/* Contact */
+
+/* intercalaire */
+#inter1 {
+    position:relative;
+    background: url("../pics/3.jpg");
+    height:100vh;
+    min-height: 350px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#inter2 {
+    position:relative;
+    background: url(../pics/fond2.jpg);
+    height: 350px;
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#inter3 {
+    position:relative;
+    background: url(../pics/fond6.jpg);
+    height: 350px;
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#inter4 {
+    position:relative;
+    background: url(../pics/fond7.jpg);
+    height: 350px;
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#inter5 {
+    position:relative;
+    background: url(../pics/fond3.jpg);
+    height: 92vh;
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/* intercalaire */
