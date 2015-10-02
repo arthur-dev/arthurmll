@@ -1,0 +1,6 @@
+nom: telephone: email: question:        --       nom: fdgtelephone: gdfemail: gfdquestion: gfdgdd       --       nom: gftelephone: gfdemail: gfquestion: fgdg       --       nom: gfd\ntelephone: gdf\nemail: gfd\nquestion: gfdgd\n    \n   --  \n     \nnom: ref
+telephone: ,k
+email: ef
+question: k,k
+    \n   --  
+     

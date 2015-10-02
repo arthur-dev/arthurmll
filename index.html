@@ -103,27 +103,27 @@
             </div>
             <div class="modal-body">
 
-                <form action="#">
+                <form id="forms" action="traitement.php" method="POST">
 
 
 
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="mdl-textfield mdl-js-textfield">
-                                <input class="mdl-textfield__input" type="text" id="name" />
+                                <input class="mdl-textfield__input" type="text" id="name" name="name" />
                                 <label class="mdl-textfield__label" for="name">Nom Prénom</label>
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="mdl-textfield mdl-js-textfield">
-                                <input class="mdl-textfield__input" type="text" id="email" />
+                                <input class="mdl-textfield__input" type="text" id="email" name="email" />
                                 <label class="mdl-textfield__label" for="email">Email</label>
                             </div>
                         </div>
 
                         <div class="col-sm-6">
                             <div class="mdl-textfield mdl-js-textfield">
-                                <input class="mdl-textfield__input" type="text" id="tel" />
+                                <input class="mdl-textfield__input" type="text" id="tel" name="tel" />
                                 <label class="mdl-textfield__label" for="email">Télephone</label>
                             </div>
                         </div>
@@ -134,7 +134,7 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="mdl-textfield mdl-js-textfield" id="question">
-                                <textarea class="mdl-textfield__input" type="textarea" rows= "10" id="ask" ></textarea>
+                                <textarea class="mdl-textfield__input" type="textarea" rows= "10" id="ask" name="ask" ></textarea>
                                 <label  class="mdl-textfield__label" for="ask">
                                     J'ai une question<br>
                                     Je veux en savoir plus sur vos compétences<br>
@@ -159,7 +159,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Non, merci, j'ai dejà tout compris !</button>
-                <button type="button" class="btn btn-primary">Poser ma question</button>
+                <button id="sendbt" type="button" class="btn btn-primary">Poser ma question</button>
             </div>
         </div>
     </div>
